@@ -1,68 +1,91 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Medium Length Professional CV
-% LaTeX Template
-% Version 2.0 (8/5/13)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% Trey Hunner (http://www.treyhunner.com/)
-%
-% Important note:
-% This template requires the resume.cls file to be in the same directory as the
-% .tex file. The resume.cls file provides the resume style used for structuring the
-% document.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\def\lang{eng}
+\documentclass{resume}
+\usepackage[left=0.65in,top=0.45in,right=0.65in,bottom=0.45in]{geometry}
+\usepackage[colorlinks=true,urlcolor=blue]{hyperref}
 
-
-%----------------------------------------------------------------------------------------
-%   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
-\input{header}
+\name{Saumitra Kulkarni}
+\address{232 Jamaicaway, Unit 2 \\ Boston, MA 02130}
+\address{+1 857 340 3723 \\ \href{mailto:saumitra.kulkarni1@gmail.com}{saumitra.kulkarni1@gmail.com} \\ \href{https://saumitranetsci.github.io}{saumitranetsci.github.io} \\ \href{https://www.linkedin.com/in/saumitranetsci/}{LinkedIn}}
 
 \begin{document}
 
-%----------------------------------------------------------------------------------------
-%   EDUCATION SECTION
-%----------------------------------------------------------------------------------------
+\begin{rSection}{Research Interests}
+Location Intelligence $\mid$ Consumer Analytics $\mid$ Urban Science $\mid$ Network Science
+\end{rSection}
+
 \begin{rSection}{Education}
-	\input{education/UCDavis}
-	\input{education/ShanghaiTech}
+\begin{rSubsection}{Northeastern University}{Sept 2024 -- Present}{PhD in Network Science}{Boston, USA}
+\item GPA: 3.9/4
+\end{rSubsection}
+\begin{rSubsection}{Savitribai Phule Pune University}{Jan 2021 -- Aug 2022}{MTech in Modeling and Simulation}{Pune, India}
+\item Outstanding Grade; CGPA: 9.15/10
+\end{rSubsection}
+\begin{rSubsection}{Shivaji University}{Jul 2016 -- Oct 2020}{BTech in Automobile Engineering}{Kolhapur, India}
+\item First Class with Distinction; CGPA: 8.52/10
+\end{rSubsection}
 \end{rSection}
 
-%----------------------------------------------------------------------------------------
-%   EXPERIENCE
-%----------------------------------------------------------------------------------------
-\begin{rSection}{Working and research experience}
-	\input{experience/Bytedance.20.tex}
-	\input{experience/Bytedance.18.tex}
-	\input{experience/MOPTA.tex}
-	\input{experience/ABB}
+\begin{rSection}{Research Experience}
+\begin{rSubsection}{\href{https://www.networkscienceinstitute.org/}{Network Science Institute}}{Sept 2024 -- Present}{Graduate Research Assistant}{Boston, USA}
+\item Supervisor: Esteban Moro
+\item \textbf{Grocery Accessibility and Shopping Behavior}: Developed a scalable \textbf{Python, SQL, and Snowflake} pipeline that transformed smartphone GPS data from \textbf{$\sim$20M devices} across 350 US metros into individual-level grocery-visitation panels.
+\item Derived behavioral features beyond residential proximity by identifying individual activity anchors with \textbf{density-based spatial clustering} and learning user--brand preference embeddings through \textbf{non-negative matrix factorization}.
+\item Built and evaluated \textbf{discrete choice models} of grocery-store selection, finding that activity-anchor proximity, brand preference, and store attractiveness were stronger determinants of choice than proximity to home; validated causally using \textbf{panel methods}.
+\item \textbf{Modeling Business Dependency Networks}: Constructed behavior-based networks between businesses from co-visitation patterns, revealing relationships beyond geographic proximity.
+\item Investigated whether \textbf{generative models of individual movement} reproduce these structures, then used \textbf{node2vec} to examine brand affinity as a driver of network formation.
+\end{rSubsection}
+
+\begin{rSubsection}{\href{https://www.isi.it/}{ISI Foundation}}{Jun 2023 -- Jun 2024}{Junior Researcher}{Turin, Italy}
+\item Supervisors: Daniela Paolotti, Manuel García-Herranz (UNICEF)
+\item Collaborated with the \textbf{UNICEF Frontier Data Network} on population displacement monitoring in natural disaster settings, building distributed \textbf{PySpark and Azure Databricks} workflows to clean and aggregate device-level geolocation data.
+\item Quantified representation bias in real-time population density maps and mobility flow networks derived from the processed data, and presented the findings to academic and policy audiences.
+\end{rSubsection}
+
+\begin{rSubsection}{\href{https://www.imsc.res.in/}{The Institute of Mathematical Sciences}}{Feb 2023 -- May 2023}{Project Assistant}{Chennai, India}
+\item Supervisors: Areejit Samal, Anirban Chakraborti (JNU Delhi)
+\item Applied \textbf{persistent homology}, discrete Ricci curvatures, and correlation-network analysis to daily stock returns from the National Stock Exchange and Bombay Stock Exchange to characterize market fragility and systemic risk.
+\end{rSubsection}
+
+\begin{rSubsection}{Savitribai Phule Pune University}{Aug 2022 -- Jan 2023}{Project Assistant}{Pune, India}
+\item Supervisor: Snehal Shekatkar
+\item Developed and simulated resource-distribution models on networks to quantify how production fluctuations and network topology affect system fitness and resource wastage.
+\end{rSubsection}
+
+\begin{rSubsection}{Central European University}{Dec 2021 -- Jun 2022}{Master Thesis Student}{Vienna, Austria}
+\item Supervisors: Iacopo Iacopini, Andrea Santoro (CENTAI Italy)
+\item Built ingredient-type co-occurrence networks from global recipe data and used network analysis and ML classification to identify cuisine-specific network fingerprints and geo-cultural similarities.
+\end{rSubsection}
 \end{rSection}
-\begin{rSection}{Projects}
-	\input{projects/ritos.tex}
-	\input{projects/Athernet.tex}
-	\input{projects/COOLCompiler.tex}
-	\input{projects/Screen++}
-	\input{projects/SafeBox}
+
+\begin{rSection}{Publications}
+\begin{enumerate}
+\item S. Fiandrino, \textbf{S. Kulkarni}, P. Cornale, S. Ghivarello, P. Birello, S. M. Parazzoli, F. Moss, A. De Gaetano, D. Liberatore, J. D’Ignazi, K. Kalimeri. \href{https://doi.org/10.64898/2026.02.26.26347164}{\emph{Characterising associations between mental distress, mobility, and COVID-19 restrictions: a US study}.} medRxiv (2026).
+\item C. Caprioli, \textbf{S. Kulkarni}, F. Battiston, I. Iacopini, A. Santoro, V. Latora. \href{https://doi.org/10.1038/s41538-025-00588-4}{\emph{The networks of ingredient combinations as culinary fingerprints of world cuisines}.} npj Science of Food (2025).
+\item \textbf{S. Kulkarni}, H. K. Pharasi, S. Vijayaraghavan, S. Kumar, A. Chakraborti, A. Samal. \href{https://doi.org/10.1016/j.physa.2024.129785}{\emph{Investigation of Indian stock markets using topological data analysis and geometry-inspired network measures}.} Physica A: Statistical Mechanics \& its Applications (2024).
+\item P. Sil, A. Subbaroyan, \textbf{S. Kulkarni}, O. C. Martin, A. Samal. \href{https://doi.org/10.1101/2023.07.17.549398}{\emph{Biologically meaningful regulatory logic enhances the convergence rate in Boolean networks and bushiness of their state transition graph}.} Briefings in Bioinformatics (2024).
+\item \textbf{S. Kulkarni}, S. M. Shekatkar. \href{https://arxiv.org/abs/2211.14043}{\emph{Detrimental role of fluctuations in the resource dependency networks}.} arXiv:2211.14043 (2022).
+\end{enumerate}
 \end{rSection}
 
-%----------------------------------------------------------------------------------------
-%   TEACHING
-%----------------------------------------------------------------------------------------
-\input{teaching}
+\begin{rSection}{Conferences and Workshops}
+\begin{itemize}
+\item July 2026: \textbf{Poster}, IC2S2 2026 International Conference on Computational Social Science, University of Vermont, USA.
+\item June 2026: Summer Institute in Computational Social Science, focus on Causal Inference, University of California Los Angeles, USA.
+\item June 2026: \textbf{Talk}, NetSci 2026 International School \& Conference on Network Science, Northeastern University, Boston, USA.
+\item Oct 2025: \textbf{Talk}, NetMob Conference 2025, INRIA, Paris, France.
+\item June 2025: Oxford Summer School in Economic Networks, University of Oxford, UK.
+\item Oct 2024: \textbf{Talk}, NetMob Conference 2024, World Bank HQ, Washington DC, USA.
+\item Dec 2022: \textbf{Poster}, Conference on Nonlinear Systems and Dynamics, IISER Pune, India.
+\end{itemize}
+\end{rSection}
 
-%----------------------------------------------------------------------------------------
-%   AWARDS
-%----------------------------------------------------------------------------------------
-% \input{awards}
+\begin{rSection}{Technical Skills}
+\textbf{Research:} Network Analysis, Graph ML, Geospatial Data Analysis, Statistical Modeling, Causal Inference\\
+\textbf{Programming:} Python, SQL, R, Git, Linux, Shell/Bash\\
+\textbf{Data Tools:} Snowflake, Apache PySpark, Azure Databricks, Dask
+\end{rSection}
 
-%----------------------------------------------------------------------------------------
-%   TECHNICAL STRENGTHS SECTION
-%----------------------------------------------------------------------------------------
-% \input{skills}
+\begin{rSection}{Awards and Achievements}
+\textbf{Lagrange Applied Research Fellowship (2023--24):} One-year funding for research projects in Data Science for Social Impact, funded by the Lagrange-CRT Foundation Project and coordinated by the ISI Foundation, Turin, Italy.
+\end{rSection}
 
 \end{document}
