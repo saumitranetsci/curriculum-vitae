@@ -22,7 +22,13 @@
 
 \LoadClass[11pt,letterpaper]{report} % Font size and paper type
 
-\usepackage[UTF8]{ctex}
+% Only the Chinese resume needs CTeX. Loading it for an English CV makes
+% Overleaf's default pdfLaTeX compiler fail on the Fandol fontset.
+\providecommand{\lang}{eng}
+\def\chineseCVLanguage{chn}
+\ifx\lang\chineseCVLanguage
+  \RequirePackage[UTF8]{ctex}
+\fi
 \usepackage[parfill]{parskip} % Remove paragraph indentation
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
 \usepackage{ifthen} % Required for ifthenelse statements
