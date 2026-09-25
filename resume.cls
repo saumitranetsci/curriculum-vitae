@@ -165,7 +165,7 @@
   \begin{tabular*}{\linewidth}{@{}l@{\extracolsep{\fill}}r@{}}
     \textbf{#1} & #2\\
     #3 & #4
-  \end{tabular*}\par\smallskip
+  \end{tabular*}\par
 }
 
 %----------------------------------------------------------------------------------------
