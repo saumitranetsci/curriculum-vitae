@@ -159,6 +159,15 @@
 \vspace{-0.6em} % Some space after the list of bullet points
 }
 
+% Two-line education entry without the bullet list used by rSubsection.
+\newcommand{\rEducation}[4]{%
+  \par\noindent
+  \begin{tabular*}{\linewidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    \textbf{#1} & #2\\
+    #3 & #4
+  \end{tabular*}\par\smallskip
+}
+
 %----------------------------------------------------------------------------------------
 % LIST FORMATTING
 %----------------------------------------------------------------------------------------
