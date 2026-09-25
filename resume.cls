@@ -168,6 +168,7 @@
     \setlength{\partopsep}{0em}%
     \setlength{\itemsep}{0em}%
     \setlength{\parsep}{0em}%
+    \vspace{-0.6em}% Pull the first bullet up beneath the group title
   }
 }{%
   \end{list}
