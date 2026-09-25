@@ -159,6 +159,20 @@
 \vspace{-0.6em} % Some space after the list of bullet points
 }
 
+% Titled group of bullets inside an rSubsection experience entry.
+\newenvironment{rExperienceSection}[1]{%
+  \item[]\textbf{#1}% Unbulleted group title
+  \begin{list}{$\cdot$}{%
+    \setlength{\leftmargin}{1em}% Indent group bullets below the title
+    \setlength{\topsep}{0.2em}%
+    \setlength{\partopsep}{0em}%
+    \setlength{\itemsep}{0em}%
+    \setlength{\parsep}{0em}%
+  }
+}{%
+  \end{list}
+}
+
 % Two-line education entry without the bullet list used by rSubsection.
 \newcommand{\rEducation}[4]{%
   \par\noindent
