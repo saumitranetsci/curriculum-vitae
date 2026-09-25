@@ -133,12 +133,12 @@
   \hrule % Horizontal line
   \begin{list}{}{ % List for each individual item in the section
     \setlength{\leftmargin}{1em} % Margin within the section
-    \itemsep -0.6em \vspace{-0.6em}
+    \itemsep 0em \vspace{0em}
           }
     \item[]
           }{
   \end{list}
-  \vspace{-0.5em}
+  \vspace{0em}
 }
 
 %----------------------------------------------------------------------------------------
@@ -153,7 +153,7 @@
 }
 %\smallskip
 \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
-  \itemsep -1em \vspace{-1.1em} % Compress items in list together for aesthetics
+  \itemsep -0.6em \vspace{-0.6em} % Compress items in list together for aesthetics
         }{
 \end{list}
 \vspace{-0.6em} % Some space after the list of bullet points
@@ -165,10 +165,10 @@
 \newenvironment{rItem}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
 {\textbf{#1}} \hfill {#2} % Bold company name and date on the right
 \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
-\vspace{-0.2em}\\
+\vspace{0em}\\
 {#3} \hfill {#4}
 }
-\vspace{-0.3em}\\
+\vspace{0em}\\
 }
 
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip
