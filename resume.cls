@@ -164,7 +164,7 @@
   \item[]\textbf{#1}% Unbulleted group title
   \begin{list}{$\cdot$}{%
     \setlength{\leftmargin}{1em}% Indent group bullets below the title
-    \setlength{\topsep}{0.2em}%
+    \setlength{\topsep}{0em}% Keep bullets close to the group title
     \setlength{\partopsep}{0em}%
     \setlength{\itemsep}{0em}%
     \setlength{\parsep}{0em}%
