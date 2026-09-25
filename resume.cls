@@ -166,7 +166,7 @@
     \setlength{\leftmargin}{1em}% Indent group bullets below the title
     \setlength{\topsep}{0em}% Keep bullets close to the group title
     \setlength{\partopsep}{0em}%
-    \setlength{\itemsep}{0em}%
+    \setlength{\itemsep}{-0.6em}% Match rSubsection bullet spacing
     \setlength{\parsep}{0em}%
     \vspace{-0.6em}% Pull the first bullet up beneath the group title
   }
