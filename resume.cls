@@ -152,7 +152,7 @@
 {#3} \hfill {#4} % Upright job title and location
 }
 %\smallskip
-\begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
+\begin{list}{$\cdot$}{\leftmargin=1em} % Indent bullets beneath the entry title
   \itemsep -0.6em \vspace{-0.6em} % Compress items in list together for aesthetics
         }{
 \end{list}
