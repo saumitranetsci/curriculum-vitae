@@ -73,7 +73,7 @@
 \begingroup
 \def \\ {\addressSep\ }
 % #1
-\vspace{-0.5em}
+\vspace{0em}
 \centerline{#1}
 \endgroup
 \par
@@ -83,7 +83,7 @@
 % \printname is used to print the name as a page header
 \def \printname {
   \begingroup
-  \vspace{-1em}
+  \vspace{0em}
   \hfil{\namesize\bf \@name}\hfil
   \nameskip\break
   \endgroup
@@ -138,7 +138,7 @@
     \item[]
           }{
   \end{list}
-  \vspace{0em}
+  \vspace{0.6em}
 }
 
 %----------------------------------------------------------------------------------------
@@ -148,7 +148,7 @@
 \newenvironment{rSubsection}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
 {\bf #1} \hfill {#2} % Bold company name and date on the right
 \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
-\vspace{-0.2em}\\
+\vspace{-0.1em}\\
 {#3} \hfill {#4} % Upright job title and location
 }
 %\smallskip
