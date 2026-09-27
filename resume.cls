@@ -133,7 +133,7 @@
   \hrule % Horizontal line
   \begin{list}{}{ % List for each individual item in the section
     \setlength{\leftmargin}{0em} % Align entries with the section heading and right edge
-    \itemsep 0em \vspace{0em}
+    \itemsep 1em \vspace{0.1em}
           }
     \item[]
           }{
