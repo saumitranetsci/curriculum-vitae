@@ -181,6 +181,7 @@
     \textbf{#1} & #2\\
     #3 & #4
   \end{tabular*}\par
+  \vspace{-0.6em}% Match the spacing after research experience entries
 }
 
 %----------------------------------------------------------------------------------------
