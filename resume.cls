@@ -159,6 +159,25 @@
 \vspace{-0.6em} % Some space after the list of bullet points
 }
 
+% Research entries in the CV use the same outer-list item spacing as other sections.
+\newenvironment{rCVSubsection}[4]{%
+  \item[]%
+  {\bf #1} \hfill {#2}%
+  \ifthenelse{\equal{#3}{}}{}{%
+    \vspace{0.1em}\\
+    {#3} \hfill {#4}%
+  }%
+  \begin{list}{$\cdot$}{%
+    \setlength{\leftmargin}{1em}% Indent bullets beneath the entry title
+    \setlength{\topsep}{0em}%
+    \setlength{\partopsep}{0em}%
+    \setlength{\itemsep}{0em}%
+    \setlength{\parsep}{0em}%
+  }%
+}{%
+  \end{list}%
+}
+
 % Titled group of bullets inside an rSubsection experience entry.
 \newenvironment{rExperienceSection}[1]{%
   \item[]\textbf{#1}% Unbulleted group title
@@ -176,12 +195,11 @@
 
 % Two-line education entry without the bullet list used by rSubsection.
 \newcommand{\rEducation}[4]{%
-  \par\noindent
+  \item[]%
   \begin{tabular*}{\linewidth}{@{}l@{\extracolsep{\fill}}r@{}}
     \textbf{#1} & #2\\
     #3 & #4
-  \end{tabular*}\par
-  \vspace{-0.6em}% Match the spacing after research experience entries
+  \end{tabular*}%
 }
 
 %----------------------------------------------------------------------------------------
