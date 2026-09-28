@@ -190,10 +190,12 @@
 \newenvironment{rItem}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
 {\textbf{#1}} \hfill {#2} % Bold company name and date on the right
 \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
-\vspace{0em}\\
+\vspace{0em}
+\\
 {#3} \hfill {#4}
 }
-\vspace{0em}\\
+\vspace{0em}
+\\
 }
 
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip
