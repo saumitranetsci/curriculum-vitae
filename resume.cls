@@ -178,6 +178,15 @@
   \end{list}%
 }
 
+% Preserve the spacing of nested project groups while aligning the entry itself.
+\newenvironment{rCVGroupedSubsection}[4]{%
+  \item[]%
+  \begin{rSubsection}{#1}{#2}{#3}{#4}%
+}{%
+  \end{rSubsection}%
+  \vspace{0.6em}% Cancel rSubsection's trailing compression between entries
+}
+
 % Titled group of bullets inside an rSubsection experience entry.
 \newenvironment{rExperienceSection}[1]{%
   \item[]\textbf{#1}% Unbulleted group title
